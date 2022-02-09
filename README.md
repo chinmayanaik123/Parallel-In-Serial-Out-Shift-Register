@@ -1,3 +1,8 @@
+
+# Project Title
+
+A brief description of what this project does and who it's for
+
 # Parallel-In-Serial-Out-Shift-Register
 * Design and implementation of Synchronous Parallel In Serial Out Shift Register which is used to convert parallel data to serial data . Shift register also acts as a temporary storage device. it can be used to multiplex different data lines into a single line which makes it easy to transmit over a single line.
 
@@ -5,7 +10,7 @@
 
 1.[ Introduction](#Introduction)
 
-2.[ INSTALLATION OF TOOLS](#INSTALLATION-OF-TOOLS)
+2.[ InstallationOf Tool's ](#InstallationOf-Tool's )
 
 3.[ Circuit Design and Details](#Circuit-Design-and-Details)
 
@@ -25,9 +30,9 @@
 
 
 
-
-## INSTALLATION OF TOOLS
 ***
+## InstallationOf Tool's 
+
 #### esim:
 esim is an open-source EDA tool used for circuit design and simulation. Using esim we can draw circuit using Kicad, generate netlist and simulate using Ngspice.
 
@@ -53,7 +58,7 @@ The Download links for above software are:
 
 #### Sky130 pdk: <https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip>
 
-
+***
 ## Circuit Design and Details
 
 #### Schematic Diagram of FISO shift Register
@@ -68,10 +73,10 @@ The Download links for above software are:
 ![dff](https://user-images.githubusercontent.com/67550103/153133700-6bb16db5-29b5-47ee-a7a3-9c079d2e0c97.png)
 
 
-
+***
 ## Circuit Operation
 
-
+***
 ## Simulation Waveforms
 
 
@@ -82,18 +87,20 @@ The Download links for above software are:
 ![waveform ](https://user-images.githubusercontent.com/67550103/153132397-1410e090-d453-492f-9405-de9a24f5f52b.jpg)
 
 
-
+***
 ## References
 
 * Namrata Joshi. "Design and Analysis of High Performance PISO & PIPO Shift Registers." IOSR Journal of Electronics and Communication Engineering (IOSR-JECE) 14.2 (2019)
 *  Shift Registers in Digital Logic https://www.geeksforgeeks.org/shift-registers-in-digitallogic/
 * Parallel-in Serial-out Shift Register (PISO) https://instrumentationtools.com/topic/parallel-in-serialout-shift-register-piso/
+***
 ## Acknowledgement
 
 Kunal Ghosh,Co-founder of VLSI System Design Corporation Pvt. Ltd.
-
+***
 ## Author
 
 Chinmaya Nilakantha Naik , Final Year B.E, ECE, Mangalore Institute of technology and Engineering
 
 Email: chinmayanaik920@gmail.com
+
