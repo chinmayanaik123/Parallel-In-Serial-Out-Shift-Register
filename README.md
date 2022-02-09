@@ -7,7 +7,7 @@
 
 1.[ Introduction](#Introduction)
 
-2.[ Installation of Tool's](#Installation-of-Tool's)
+2.[ Installation of Tools](#Installation of Tools)
 
 3.[ Circuit Design](#Circuit-Design)
 
@@ -28,7 +28,7 @@ Parallel In Serial Out Shift Register which is used to convert parallel data to 
 
 
 ***
-## Installation of Tool's 
+## Installation of Tools 
 
 #### esim:
 esim is an open-source EDA tool used for circuit design and simulation. Using esim we can draw circuit using Kicad, generate netlist and simulate using Ngspice.developed by the FOSSEE team at IIT Bombay.
