@@ -7,7 +7,7 @@ Download sky130 from this link mentioned above and unzip it.
 
 To Run the ckt using ngspice:
 
-Right click on .cir file.
+Right click on .cir.out file.
 Click on Open With.
 Browse for the ngspice.
 If ngspice not present scroll down click on More Apps.
