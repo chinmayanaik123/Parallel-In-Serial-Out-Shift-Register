@@ -84,7 +84,7 @@ The Download links for above software are:
 
 ## References
 
-* Namrata Joshi. "Design and Analysis of High Performance PISO & PIPO Shift Registers." IOSR Journal of Electronics and Communication Engineering (IOSR-JECE) 14.2 (2019): 13-18. (Figure 1 and 2 source )
+* Namrata Joshi. "Design and Analysis of High Performance PISO & PIPO Shift Registers." IOSR Journal of Electronics and Communication Engineering (IOSR-JECE) 14.2 (2019)
 *  Shift Registers in Digital Logic https://www.geeksforgeeks.org/shift-registers-in-digitallogic/
 * Parallel-in Serial-out Shift Register (PISO) https://instrumentationtools.com/topic/parallel-in-serialout-shift-register-piso/
 ## Acknowledgement
