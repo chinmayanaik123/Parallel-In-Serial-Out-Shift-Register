@@ -66,8 +66,7 @@ The Download links for above software are:
 ![or](https://user-images.githubusercontent.com/67550103/153133709-16dda94c-29d3-4dd9-9e94-46fa1d69bc1a.png)
 #### Schematic Diagram of D-flip flop
 ![dff](https://user-images.githubusercontent.com/67550103/153133700-6bb16db5-29b5-47ee-a7a3-9c079d2e0c97.png)
-
-
+<img src="https://user-images.githubusercontent.com/67550103/153133700-6bb16db5-29b5-47ee-a7a3-9c079d2e0c97.png" width="48">
 ## Circuit Operation
 
 
