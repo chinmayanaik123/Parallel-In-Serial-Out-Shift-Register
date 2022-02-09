@@ -7,7 +7,7 @@
 
 1.[ Introduction](#Introduction)
 
-2.[ InstallationOf Tool's ](#InstallationOf-Tool's )
+2.[ Installation of Tool's ](#Installation-of-Tool's )
 
 3.[ Circuit Design](#Circuit-Design)
 
@@ -28,7 +28,7 @@ Parallel In Serial Out Shift Register which is used to convert parallel data to 
 
 
 ***
-## InstallationOf Tool's 
+## Installation of Tool's 
 
 #### esim:
 esim is an open-source EDA tool used for circuit design and simulation. Using esim we can draw circuit using Kicad, generate netlist and simulate using Ngspice.
@@ -47,7 +47,7 @@ The SkyWater Open Source PDK is a collaboration between Google and SkyWater Tech
 
 For more information: <https://www.layouteditor.org/schematiceditor/libraries/skywater>
 
-The Download links for above software are:
+## The Download links for the softwares :
 
 #### esim: <https://esim.fossee.in/downloads>
 
@@ -58,15 +58,15 @@ The Download links for above software are:
 ***
 ## Circuit Design
 
-#### Schematic Diagram of FISO shift Register
+### Schematic Diagram of FISO shift Register
 ![piso ](https://user-images.githubusercontent.com/67550103/153134866-392da811-84db-4f1e-bfc4-81c0c2d480c5.png)
-#### Schematic Diagram of inverter
+### Schematic Diagram of inverter
 ![inv](https://user-images.githubusercontent.com/67550103/153133705-80cf44ff-848a-448d-a6dd-ca42cf84bcb5.png)
-#### Schematic Diagram of And logic gate
+### Schematic Diagram of And logic gate
 ![and](https://user-images.githubusercontent.com/67550103/153133702-f8241e53-e737-49c9-9d69-c00158a35d89.png)
-#### Schematic Diagram of Or logic gate
+### Schematic Diagram of Or logic gate
 ![or](https://user-images.githubusercontent.com/67550103/153133709-16dda94c-29d3-4dd9-9e94-46fa1d69bc1a.png)
-#### Schematic Diagram of D-flip flop
+### Schematic Diagram of D-flip flop
 ![dff](https://user-images.githubusercontent.com/67550103/153133700-6bb16db5-29b5-47ee-a7a3-9c079d2e0c97.png)
 
 
