@@ -1,3 +1,5 @@
+
+
 # Parallel-In-Serial-Out-Shift-Register
 * Design and implementation of Synchronous Parallel In Serial Out Shift Register which is used to convert parallel data to serial data . Shift register also acts as a temporary storage device. it can be used to multiplex different data lines into a single line which makes it easy to transmit over a single line.
 
@@ -13,11 +15,13 @@
    
 5.[ Simulation Waveforms](#Simulation-Waveforms)
 
-6.[ References](#References)
+6.[ Reproduce waveforms](#Reproduce-waveforms)
 
-7.[ Acknowledgement](#Acknowledgement)
+7.[ References](#References)
 
-8.[ Author](#Author)
+8.[ Acknowledgement](#Acknowledgement)
+
+9.[ Author](#Author)
 
 ## Introduction
 Parallel In Serial Out Shift Register which is used to convert parallel data to serial data. Shift Register is a group of flip flops that is used to store or move the multiple bits of data. In the Parallel In Serial Out (PISO) shift register the data is shifted Parallely ‘IN’ and serially ‘OUT’ of the register, one bit at a time in either a left or right direction under clock control.Simultaneously Data is loaded into the register. There is only one output to the PISO, In a serial pattern the data leaves the shift register one bit at a time. The circuit consists of four D flip-flops which are connected in a serial manner also or, and & not logic gates. Since the same clock signal is applied to each flip flop, All these flip-flops are synchronous with each other. This reference circuit will be simulated in eSim EDA tool and then will be implemented using SkyWater’s 130nm PDK.
@@ -73,6 +77,13 @@ Shift register is a group of flip flops arranged in a manner to shift the data s
 ## Simulation Waveforms
 ![waveform ](https://user-images.githubusercontent.com/67550103/153132397-1410e090-d453-492f-9405-de9a24f5f52b.jpg)
 
+***
+## Reproduce waveforms
+
+For Windows users, 
+- Download this repository.  https://github.com/chinmayanaik123/Parallel-In-Serial-Out-Shift-Register.git
+- Download the [sky130_fd_pr](https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip), place the sky_130_fd_pr folder in the same folder as .cir file.
+- Open the .cir file with ngspice, ensuring the presence of sky_130_fd_pr folder in the same folder as .cir file.
 
 ***
 ## References
@@ -83,10 +94,10 @@ Shift register is a group of flip flops arranged in a manner to shift the data s
 ***
 ## Acknowledgement
 
-Kunal Ghosh,Co-founder of VLSI System Design Corporation Pvt. Ltd.
+Kunal Ghosh, Co-founder of VLSI System Design Corporation Pvt. Ltd.
 ***
 ## Author
 
-Chinmaya Nilakantha Naik , Final Year B.E, ECE, Mangalore Institute of technology and Engineering
+Chinmaya Nilakantha Naik , Final Year B.E in  ECE, Mangalore Institute of technology and Engineering
 
 Email: chinmayanaik920@gmail.com
