@@ -23,13 +23,8 @@
 
 ## Introduction
 
-Now-a-days among different memory elements SRAM(Static Random Access Memory) became very popular because of their high speed operations and low power consumption.
-The most common SRAM cell used in todays applications are 6T SRAM.Even through it has low power consumption and high speed operation compared other memory elements
-like DRAM,the read operation in 6T SRAM is still slow because of the time taken by the access transistors to access the memory part(latch) of the SRAM,i.e.,time taken
-for the read/write operation would be quite large resulting in increased leaksge power over this long period of time in the idle circuit.And also since the READ operation 
-is performed by making WL=1 and keeping the access transistors in Active state, the read operation may disturb or corrupt the data present in the memory element(latch) due 
-to the external static noise.So,In this paper we have discussed about the 10T SRAM which has low leakage power, high read operation speed,avoid 
-noise in read operation and solves the limitations of conventional 6T SRAM.
+
+
 
 ## INSTALLATION OF TOOLS
 ***
@@ -81,10 +76,7 @@ The Download links for above software are:
 
 ## Conclution
 
-In 10T SRAM, since the inverter is directly connect with the memory element to make the READ operation independent of access transistors, we can actually reduce the read delay 
-because now we don't need to wait for the access transistors to turn on for read operation.But the write operation still takes time because it still depends on Access transistors.In this section we are going to prove that the READ speed is increased by making the READ operation independent on Access Transistors.
 
-For measuring the read and write operation delay we simulated the same circuit, but by keeping the Timeperiod of input waveforms in nanometers we got the following results.
 
 ![waveform ](https://user-images.githubusercontent.com/67550103/153132397-1410e090-d453-492f-9405-de9a24f5f52b.jpg)
 
