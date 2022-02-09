@@ -96,6 +96,7 @@ For Windows users,
 * Namrata Joshi. "Design and Analysis of High Performance PISO & PIPO Shift Registers." IOSR Journal of Electronics and Communication Engineering (IOSR-JECE) 14.2 (2019)
 *  Shift Registers in Digital Logic https://www.geeksforgeeks.org/shift-registers-in-digital-logic/
 * Parallel-in Serial-out Shift Register (PISO) https://www.allaboutcircuits.com/textbook/digital/chpt-12/parallel-in-serial-out-shift-register/
+* S. A. Madhu Shakya. Design low power cmos d flip flop using modified svl techniques. https:www.ijrar.org/papers/IJRAR1944229.pdf.
 ***
 ## Acknowledgement
 
