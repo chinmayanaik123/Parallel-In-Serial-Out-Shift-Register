@@ -7,7 +7,7 @@
 
 1.[ Introduction](#Introduction)
 
-2.[ Installation of Tools](#Installation of Tools)
+2.[ Installation of Tools](#Installation-of-Tools)
 
 3.[ Circuit Design](#Circuit-Design)
 
