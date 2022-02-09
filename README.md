@@ -1,5 +1,3 @@
-
-
 # Parallel-In-Serial-Out-Shift-Register
 * Design and implementation of Synchronous Parallel In Serial Out Shift Register which is used to convert parallel data to serial data . Shift register also acts as a temporary storage device. it can be used to multiplex different data lines into a single line which makes it easy to transmit over a single line.
 
@@ -9,13 +7,11 @@
 
 2.[ InstallationOf Tool's ](#InstallationOf-Tool's )
 
-3.[ Circuit Design and Details](#Circuit-Design-and-Details)
+3.[ Circuit Design](#Circuit-Design)
 
-3.[ Circuit Operation](#Circuit-Operation)
+4.[ Circuit Operation](#Circuit-Operation)
    
-4.[ Simulation Waveforms](#Simulation-Waveforms)
-
-5.[ Conclution](#Conclution)
+5.[ Simulation Waveforms](#Simulation-Waveforms)
 
 6.[ References](#References)
 
@@ -56,7 +52,7 @@ The Download links for above software are:
 #### Sky130 pdk: <https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip>
 
 ***
-## Circuit Design and Details
+## Circuit Design
 
 #### Schematic Diagram of FISO shift Register
 ![piso ](https://user-images.githubusercontent.com/67550103/153134866-392da811-84db-4f1e-bfc4-81c0c2d480c5.png)
@@ -73,15 +69,8 @@ The Download links for above software are:
 ***
 ## Circuit Operation
 Shift register is a group of flip flops arranged in a manner to shift the data stored in the FF to the next FF for every clock pulse.The data is loaded into the register in a parallel format which means all of the data bits enter their inputs simultaneously to the parallel input pins D0 to D3 of the register. To load the data into all registers only one clock pulse is enough but four clock pulses are required to shift and unload the data from the registers.The FISO circuit consists of four D flip-flops which are connected in serial fashion. The clock input is directly given to all the flip flops but the input data is connected individually to each flip flop through a MUX.The output of the previous flip flop and parallel data from the input are connected to the inputs of the MUX and t MUX output is connected to the next flip flop.Each flip flop has a respective input from D0 to D3. If the control signal Shift =0 then each flip flop is loaded with input. If the control signal Shift =1 then shifting has performed and output has taken from the last flip flop serially.When the Shift is logic high. The lower AND gates of the pairs feeding the OR gate are enabled that makes a connection of Q0 to D1 , Q1 to D2 , Q2 to D3 . Clock pulses will make data to shift right and finally out of D3 on successive pulses.
-
 ***
 ## Simulation Waveforms
-
-
-## Conclution
-
-
-
 ![waveform ](https://user-images.githubusercontent.com/67550103/153132397-1410e090-d453-492f-9405-de9a24f5f52b.jpg)
 
 
