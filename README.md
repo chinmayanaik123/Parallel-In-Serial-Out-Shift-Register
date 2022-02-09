@@ -59,17 +59,13 @@ The Download links for above software are:
 #### Schematic Diagram of FISO shift Register
 ![piso ](https://user-images.githubusercontent.com/67550103/153134866-392da811-84db-4f1e-bfc4-81c0c2d480c5.png)
 #### Schematic Diagram of inverter
-![inv](https://user-images.githubusercontent.com/67550103/153133705-80cf44ff-848a-448d-a6dd-ca42cf84bcb5.png)
-<img src="https://user-images.githubusercontent.com/67550103/153133705-80cf44ff-848a-448d-a6dd-ca42cf84bcb5.png" width="500">
+<img src="https://user-images.githubusercontent.com/67550103/153133705-80cf44ff-848a-448d-a6dd-ca42cf84bcb5.png" width="600"> <img src="https://user-images.githubusercontent.com/67550103/153133702-f8241e53-e737-49c9-9d69-c00158a35d89.png" width="600">
 #### Schematic Diagram of And logic gate
-![and](https://user-images.githubusercontent.com/67550103/153133702-f8241e53-e737-49c9-9d69-c00158a35d89.png)
-<img src="https://user-images.githubusercontent.com/67550103/153133702-f8241e53-e737-49c9-9d69-c00158a35d89.png" width="500">
+
 #### Schematic Diagram of Or logic gate
-![or](https://user-images.githubusercontent.com/67550103/153133709-16dda94c-29d3-4dd9-9e94-46fa1d69bc1a.png)
-<img src="https://user-images.githubusercontent.com/67550103/153133709-16dda94c-29d3-4dd9-9e94-46fa1d69bc1a.png" width="500">
+<img src="https://user-images.githubusercontent.com/67550103/153133709-16dda94c-29d3-4dd9-9e94-46fa1d69bc1a.png" width="600">  <img src="https://user-images.githubusercontent.com/67550103/153133700-6bb16db5-29b5-47ee-a7a3-9c079d2e0c97.png" width="600">
 #### Schematic Diagram of D-flip flop
-![dff](https://user-images.githubusercontent.com/67550103/153133700-6bb16db5-29b5-47ee-a7a3-9c079d2e0c97.png)
-<img src="https://user-images.githubusercontent.com/67550103/153133700-6bb16db5-29b5-47ee-a7a3-9c079d2e0c97.png" width="500">
+
 ## Circuit Operation
 
 
