@@ -70,6 +70,8 @@ For more information: <https://www.layouteditor.org/schematiceditor/libraries/sk
 ![or](https://user-images.githubusercontent.com/67550103/153133709-16dda94c-29d3-4dd9-9e94-46fa1d69bc1a.png)
 ### Schematic Diagram of D-flip flop
 ![dff](https://user-images.githubusercontent.com/67550103/153133700-6bb16db5-29b5-47ee-a7a3-9c079d2e0c97.png)
+### inverter,and,or & D flipflop Subcircuit blocks
+![subcircuits](https://user-images.githubusercontent.com/67550103/153207038-278af83c-2d01-4bbc-9a30-666acb2db941.png)
 
 
 ***
