@@ -7,7 +7,7 @@
 
 1.[ Introduction](#Introduction)
 
-2.[ Installation of Tool's ](#Installation-of-Tool's )
+2.[ Installation of Tool's](#Installation-of-Tool's)
 
 3.[ Circuit Design](#Circuit-Design)
 
@@ -31,7 +31,7 @@ Parallel In Serial Out Shift Register which is used to convert parallel data to 
 ## Installation of Tool's 
 
 #### esim:
-esim is an open-source EDA tool used for circuit design and simulation. Using esim we can draw circuit using Kicad, generate netlist and simulate using Ngspice.
+esim is an open-source EDA tool used for circuit design and simulation. Using esim we can draw circuit using Kicad, generate netlist and simulate using Ngspice.developed by the FOSSEE team at IIT Bombay.
 
 For more information: <https://esim.fossee.in/home>
 
@@ -58,8 +58,10 @@ For more information: <https://www.layouteditor.org/schematiceditor/libraries/sk
 ***
 ## Circuit Design
 
-### Schematic Diagram of FISO shift Register
+### Schematic Diagram of PISO shift Register
 ![piso ](https://user-images.githubusercontent.com/67550103/153134866-392da811-84db-4f1e-bfc4-81c0c2d480c5.png)
+* Schematic Diagram shows the  4-stage parallel-in/ serial-out shift register. A stage consists of a type D Flip-Flop for storage, and an AND-OR selector to determine whether data will load in parallel, or shift stored data to the right.
+* Subcircuit is a way to implement hierarchical modeling. Once a subcircuit for a component is created, it can be used in main circuits. following are the Schematic of inverter,and,or & D flipflop which is converted into a subcircuit block.
 ### Schematic Diagram of inverter
 ![inv](https://user-images.githubusercontent.com/67550103/153133705-80cf44ff-848a-448d-a6dd-ca42cf84bcb5.png)
 ### Schematic Diagram of And logic gate
@@ -72,11 +74,12 @@ For more information: <https://www.layouteditor.org/schematiceditor/libraries/sk
 
 ***
 ## Circuit Operation
-Shift register is a group of flip flops arranged in a manner to shift the data stored in the FF to the next FF for every clock pulse.The data is loaded into the register in a parallel format which means all of the data bits enter their inputs simultaneously to the parallel input pins D0 to D3 of the register. To load the data into all registers only one clock pulse is enough but four clock pulses are required to shift and unload the data from the registers.The FISO circuit consists of four D flip-flops which are connected in serial fashion. The clock input is directly given to all the flip flops but the input data is connected individually to each flip flop through a MUX.The output of the previous flip flop and parallel data from the input are connected to the inputs of the MUX and t MUX output is connected to the next flip flop.Each flip flop has a respective input from D0 to D3. If the control signal Shift =0 then each flip flop is loaded with input. If the control signal Shift =1 then shifting has performed and output has taken from the last flip flop serially.When the Shift is logic high. The lower AND gates of the pairs feeding the OR gate are enabled that makes a connection of Q0 to D1 , Q1 to D2 , Q2 to D3 . Clock pulses will make data to shift right and finally out of D3 on successive pulses.
+Shift register is a group of flip flops arranged in a manner to shift the data stored in the FF to the next FF for every clock pulse.The data is loaded into the register in a parallel format which means all of the data bits enter their inputs simultaneously to the parallel input pins D1 to D4 of the register. To load the data into all registers only one clock pulse is enough but four clock pulses are required to shift and unload the data from the registers.The FISO circuit consists of four D flip-flops which are connected in serial fashion. The clock input is directly given to all the flip flops but the input data is connected individually to each flip flop through a MUX.The output of the previous flip flop and parallel data from the input are connected to the inputs of the MUX and t MUX output is connected to the next flip flop.Each flip flop has a respective input from D0 to D3. If the control signal Shift =0 then each flip flop is loaded with input. If the control signal Shift =1 then shifting has performed and output has taken from the last flip flop serially.When the Shift is logic high. The lower AND gates of the pairs feeding the OR gate are enabled that makes a connection of Q0 to D1 , Q1 to D2 , Q2 to D3 . Clock pulses will make data to shift right and finally out of D3 on successive pulses.
 ***
 ## Simulation Waveforms
+* The waveforms below shows both parallel loading of four bits of data and serial shifting of this data. Parallel data at D1 D2 D3 D4 is converted to serial data at qout. This is the parallel loading of the data synchronous with the clock. 
 ![waveform ](https://user-images.githubusercontent.com/67550103/153132397-1410e090-d453-492f-9405-de9a24f5f52b.jpg)
-
+  * This type of shift register acts as a time delay device by varying the amount of delay by various frequencies of the clock pulses .Shift register also acts as a temporary storage device . As this type of shift register is capable of converting parallel data to serial data , it can be used to multiplex different data lines into a single line which makes it easy to transmit over a single line.
 ***
 ## Reproduce waveforms
 
@@ -89,8 +92,8 @@ For Windows users,
 ## References
 
 * Namrata Joshi. "Design and Analysis of High Performance PISO & PIPO Shift Registers." IOSR Journal of Electronics and Communication Engineering (IOSR-JECE) 14.2 (2019)
-*  Shift Registers in Digital Logic https://www.geeksforgeeks.org/shift-registers-in-digitallogic/
-* Parallel-in Serial-out Shift Register (PISO) https://instrumentationtools.com/topic/parallel-in-serialout-shift-register-piso/
+*  Shift Registers in Digital Logic https://www.geeksforgeeks.org/shift-registers-in-digital-logic/
+* Parallel-in Serial-out Shift Register (PISO) https://www.allaboutcircuits.com/textbook/digital/chpt-12/parallel-in-serial-out-shift-register/
 ***
 ## Acknowledgement
 
