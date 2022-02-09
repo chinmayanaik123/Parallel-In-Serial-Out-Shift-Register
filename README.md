@@ -1,7 +1,4 @@
 
-# Project Title
-
-A brief description of what this project does and who it's for
 
 # Parallel-In-Serial-Out-Shift-Register
 * Design and implementation of Synchronous Parallel In Serial Out Shift Register which is used to convert parallel data to serial data . Shift register also acts as a temporary storage device. it can be used to multiplex different data lines into a single line which makes it easy to transmit over a single line.
@@ -27,7 +24,7 @@ A brief description of what this project does and who it's for
 8.[ Author](#Author)
 
 ## Introduction
-
+This Paper proposes the implementation of Synchronous Parallel In Serial Out Shift Register which is used to convert parallel data to serial data. Shift Register is a group of flip flops that is used to store or move the multiple bits of data. In the Parallel In Serial Out (PISO) shift register the data is shifted Parallely ‘IN’ and serially ‘OUT’ of the register, one bit at a time in either a left or right direction under clock control.Simultaneously Data is loaded into the register. There is only one output to the PISO, In a serial pattern the data leaves the shift register one bit at a time. The circuit consists of four D flip-flops which are connected in a serial manner also or, and & not logic gates. Since the same clock signal is applied to each flip flop, All these flip-flops are synchronous with each other. This reference circuit will be simulated in eSim EDA tool and then will be implemented using SkyWater’s 130nm PDK.
 
 
 ***
@@ -103,4 +100,3 @@ Kunal Ghosh,Co-founder of VLSI System Design Corporation Pvt. Ltd.
 Chinmaya Nilakantha Naik , Final Year B.E, ECE, Mangalore Institute of technology and Engineering
 
 Email: chinmayanaik920@gmail.com
-
