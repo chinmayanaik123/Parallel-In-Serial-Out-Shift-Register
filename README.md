@@ -24,7 +24,7 @@
 8.[ Author](#Author)
 
 ## Introduction
-This Paper proposes the implementation of Synchronous Parallel In Serial Out Shift Register which is used to convert parallel data to serial data. Shift Register is a group of flip flops that is used to store or move the multiple bits of data. In the Parallel In Serial Out (PISO) shift register the data is shifted Parallely ‘IN’ and serially ‘OUT’ of the register, one bit at a time in either a left or right direction under clock control.Simultaneously Data is loaded into the register. There is only one output to the PISO, In a serial pattern the data leaves the shift register one bit at a time. The circuit consists of four D flip-flops which are connected in a serial manner also or, and & not logic gates. Since the same clock signal is applied to each flip flop, All these flip-flops are synchronous with each other. This reference circuit will be simulated in eSim EDA tool and then will be implemented using SkyWater’s 130nm PDK.
+Parallel In Serial Out Shift Register which is used to convert parallel data to serial data. Shift Register is a group of flip flops that is used to store or move the multiple bits of data. In the Parallel In Serial Out (PISO) shift register the data is shifted Parallely ‘IN’ and serially ‘OUT’ of the register, one bit at a time in either a left or right direction under clock control.Simultaneously Data is loaded into the register. There is only one output to the PISO, In a serial pattern the data leaves the shift register one bit at a time. The circuit consists of four D flip-flops which are connected in a serial manner also or, and & not logic gates. Since the same clock signal is applied to each flip flop, All these flip-flops are synchronous with each other. This reference circuit will be simulated in eSim EDA tool and then will be implemented using SkyWater’s 130nm PDK.
 
 
 ***
@@ -72,6 +72,7 @@ The Download links for above software are:
 
 ***
 ## Circuit Operation
+Shift register is a group of flip flops arranged in a manner to shift the data stored in the FF to the next FF for every clock pulse.The data is loaded into the register in a parallel format which means all of the data bits enter their inputs simultaneously to the parallel input pins D0 to D3 of the register. To load the data into all registers only one clock pulse is enough but four clock pulses are required to shift and unload the data from the registers.The FISO circuit consists of four D flip-flops which are connected in serial fashion. The clock input is directly given to all the flip flops but the input data is connected individually to each flip flop through a MUX.The output of the previous flip flop and parallel data from the input are connected to the inputs of the MUX and t MUX output is connected to the next flip flop.Each flip flop has a respective input from D0 to D3. If the control signal Shift =0 then each flip flop is loaded with input. If the control signal Shift =1 then shifting has performed and output has taken from the last flip flop serially.When the Shift is logic high. The lower AND gates of the pairs feeding the OR gate are enabled that makes a connection of Q0 to D1 , Q1 to D2 , Q2 to D3 . Clock pulses will make data to shift right and finally out of D3 on successive pulses.
 
 ***
 ## Simulation Waveforms
