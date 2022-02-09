@@ -1,0 +1,17 @@
+* Subcircuit or_B
+
+
+.subckt or_B in2 in1 vdd out 
+
+
+* c:\fossee\esim\library\subcircuitlibrary\or_b\or_b.cir
+
+xm5  out net-_m1-pad1_ gnd gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xm6  out net-_m1-pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5
+xm1  net-_m1-pad1_ in1 gnd gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xm4  net-_m1-pad1_ in2 gnd gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xm2  net-_m2-pad1_ in1 vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5
+xm3  net-_m1-pad1_ in2 net-_m2-pad1_ net-_m2-pad1_ sky130_fd_pr__pfet_01v8 w=1    l=0.5
+* Control Statements
+
+.ends or_B

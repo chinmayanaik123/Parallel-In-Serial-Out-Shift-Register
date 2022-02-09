@@ -1,0 +1,43 @@
+* c:\users\chinm\esim-workspace\piso_a\piso_a.cir
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt 
+
+.include or_B.sub
+.include and_A.sub
+.include inv_A.sub
+.include dff_A.sub
+x2 d1 clk vdd net-_x2-pad4_ dff_A
+x6 net-_x4-pad4_ clk vdd net-_x6-pad4_ dff_A
+x10 net-_x10-pad1_ clk vdd net-_x10-pad4_ dff_A
+x14 net-_x12-pad4_ clk vdd qout dff_A
+x1 shift vdd net-_x1-pad3_ inv_A
+x4 net-_x3-pad4_ net-_x4-pad2_ vdd net-_x4-pad4_ or_B
+x3 net-_x2-pad4_ shift vdd net-_x3-pad4_ and_A
+x5 net-_x1-pad3_ d2 vdd net-_x4-pad2_ and_A
+x8 net-_x7-pad4_ net-_x8-pad2_ vdd net-_x10-pad1_ or_B
+x7 net-_x6-pad4_ shift vdd net-_x7-pad4_ and_A
+x9 net-_x1-pad3_ d3 vdd net-_x8-pad2_ and_A
+x12 net-_x11-pad4_ net-_x12-pad2_ vdd net-_x12-pad4_ or_B
+x11 net-_x10-pad4_ shift vdd net-_x11-pad4_ and_A
+x13 net-_x1-pad3_ d4 vdd net-_x12-pad2_ and_A
+
+Vdd vdd 0 3.3
+
+vd0 clk 0 pulse(0 1.8 0s 0s 0s 2.5us 5us)
+vd5 shift 0 pulse(1.8 0s  0s 0s 0s 5us 40us)
+vd1 d1 0 pulse(0 1.8 5us 0s 0s 5us 15us )
+vd2 d2 0 pulse(0 1.8 10us 0s 0s 5us 15us)
+vd3 d3 0 pulse(0 1.8 15us 0s 0s 5us 15us)
+vd4 d4 0 pulse(0 1.8 20us 0s 0s 5us 15us)
+
+
+
+.tran 0.1us 60us
+
+.control
+run
+
+plot V(clk)+5 V(shift)+5 V(d1)+5 V(d2)+5 V(d3)+5 V(d4)
+plot V(qout)
+
+.endc
+.end

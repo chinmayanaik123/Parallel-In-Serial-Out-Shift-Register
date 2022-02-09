@@ -1,0 +1,10 @@
+* Subcircuit inv_A
+
+.subckt inv_A in vdd out 
+* c:\fossee\esim\library\subcircuitlibrary\inv_a\inv_a.cir
+
+xm1  out in gnd gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5	
+xm2  out in vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5
+* Control Statements
+
+.ends inv_A

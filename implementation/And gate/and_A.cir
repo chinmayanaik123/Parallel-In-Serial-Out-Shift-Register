@@ -1,0 +1,29 @@
+* C:\Users\chinm\eSim-Workspace\and\and.cir
+
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt  
+
+xM5  out Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xM6  out Net-_M1-Pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+	
+xM2  Net-_M1-Pad1_ in1 Net-_M2-Pad3_ Net-_M2-Pad3_ sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM3  Net-_M2-Pad3_ in2 GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM1  Net-_M1-Pad1_ in1 vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+xM4  Net-_M1-Pad1_ in2 vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+
+Vdd vdd 0 3.3
+Vin1 in1 0 pulse(0 1.8 0s 0s 0s 5us 10us)
+Vin2 in2 0 pulse(0 1.8 0s 0s 0s 10us 20us)
+
+.tran 0.1us 40us
+
+.control
+run
+
+plot V(in1) 
+plot V(in2) 
+plot V(out)
+
+.endc
+.end
+
+

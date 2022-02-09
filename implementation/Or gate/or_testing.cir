@@ -1,0 +1,20 @@
+* C:\Users\chinm\eSim-Workspace\or_testing\or_testing.cir
+
+.include or_B.sub
+		
+X1  in2 in1 vdd out or_B		
+		
+Vdd vdd 0 3.3
+vd0 in1 0 pulse(0 1.8 0s 0s 0s 5us 10us)
+vd1 in2 0 pulse(0 1.8 0s 0s 0s 10us 20us)
+.tran 0.1us 40us
+
+.control
+run
+
+plot V(in1) 
+plot V(in2) 
+plot V(out)
+
+.endc
+.end

@@ -1,0 +1,21 @@
+* C:\Users\chinm\eSim-Workspace\inv_A\inv_A.cir
+.lib "sky130_fd_pr/models/sky130.lib.spice " tt  
+
+xM1  out in GND GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.5		
+xM2  out in vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5		
+U1  in vdd out PORT		
+
+Vdd vdd 0 3.3
+vd0 in 0 pulse(0 1.8 0s 0s 0s 5us 10us)
+
+
+.tran 0.1us 40us
+
+.control
+run
+
+plot V(in)  
+plot V(out)
+
+.endc
+.end

@@ -1,0 +1,15 @@
+* Subcircuit dff_A
+
+
+.subckt dff_A din clk vdd qout 
+
+* c:\fossee\esim\library\subcircuitlibrary\dff_a\dff_a.cir
+
+xm3  net-_m1-pad1_ din vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5
+xm5  qout net-_m1-pad1_ vdd vdd sky130_fd_pr__pfet_01v8 w=1    l=0.5
+xm1  net-_m1-pad1_ clk net-_m1-pad3_ net-_m1-pad3_ sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xm4  qout net-_m1-pad3_ gnd gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+xm2  net-_m1-pad3_ din gnd gnd sky130_fd_pr__nfet_01v8 w=0.42 l=0.5
+* Control Statements
+
+.ends dff_A
